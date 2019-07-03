@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Header</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <!-- <script language="JavaScript">
+        function WinOpen() {
+            var url = document.redirect.selection.value
+            document.location.href = url
+        }
+    </script> -->
+    
+</head>
+
+<body >
+    <!--header image starts-->
+   
+
+    <div class="container" style="background-color: pink;">
+      
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+              <a class="stripelink" href="#">stripe</a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+             
+            </div> -->
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="mainheader" id="">
+              <ul >
+                  <li><a href="#">Pricing</a></li>
+                <!-- <li class=""><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company </a>
+                    <ul  class="dropdown-menu">
+                      
+                      
+                      <li *ngFor="let items of Items.company "><a class="dynamic" href="#"><i class="fa fa-eercast awesome"></i>{{items.title}}</a></li>
+                      <li *ngFor="let items of Items.company "> <p class="dyna" style="">{{items.sub-tile}}</p></li>
+                      <!-- <li><a href="#">Another action</a></li>
+                      <li><a href="#">Action</a></li> -->
+                      <!-- <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li> -->
+                    </ul>
+                  </li>
+
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers</a>
+                      <ul   class="dropdown-menu">
+                        
+                        
+                        <li *ngFor="let items of Items.developers "><a class="dynamic" href="#"><i class="fa fa-bandcamp awesome"></i>{{items.title}}</a></li>
+                        <li *ngFor="let items of Items.developers "> <p style="font-size:6px;">{{items.sub-tile}}</p></li>
+                        <!-- <li><a href="#">Another action</a></li>
+                        <li><a href="#">Action</a></li> -->
+                        <!-- <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li> -->
+                      </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products </a>
+                        <ul   class="dropdown-menu">
+                          
+                          
+                          <li *ngFor="let items of Items.product "><a class="dynamic" href="#"><i class="fa fa-podcast awesome"></i>{{items.title}}</a></li>
+                          <li *ngFor="let items of Items.product "> <p style="font-size:6px;">{{items.sub-tile}}</p></li>
+                          <!-- <li><a href="#">Another action</a></li>
+                          <li><a href="#">Action</a></li> -->
+                          <!-- <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">One more separated link</a></li> -->
+                        </ul>
+                      </li>
+                      
+                </ul>
+                
+                
+              </div><!-- /.navbar-collapse -->
+<ul class="support">
+  <li><a href="#">Sign in <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+  <li><a href="#">Support</a></li>
+</ul>
+
+
+
+
+
+            </div><!-- /.container-fluid -->
+
+
+<!--hamburger-->
+<!--hamburger begins-->
+<nav class="hamburger1" role='navigation'>
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span class="hamb1"></span>
+    <span class="hamb1"></span>
+    <span class="hamb1"></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a class="hamb" href="#"><li class="pro"> Product</li></a>
+      <a class="hamb" href="#"><li class="dev">Developers</li></a>
+      <a class="hamb" href="#"><li class="com">Company</li></a>
+      <a class="hamb" href="#"><li class="pri">Pricing</li></a>
+      <div class="botm" >
+      <a class="sign"  href="#"><li>Sign In<span style="display:inline;background-color:transparent !important;" class="glyphicon glyphicon-arrow-right"></span></li></a>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<!--hamburger ends-->
+
+<!--hamburger ends-->
+
+          </nav>
+          
+
+
+
+
+    <!--header image ends-->
+
+    <!--container starts-->
+    <div class="container-fluid below" >
+
+<div class="first">
+    <a href="#" class="btn btn-primary contactbttn" style="font-weight:bold;" type="button">NEW</a>
+ <a class="charge" href="#"> <p class="intro">Introducing Chargeback Protection<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+</div>
+<div class="second">
+  <p class="newstd">The new standard in online payments</p>
+  <p class="description">Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.</p>
+  <img class="fiximg" src="../assets/images/Capture.PNG">
+</div>
+
+<div class="third">
+    <a href="#" class="btn btn-primary contactbttn2" type="button">start now</a>
+    <a href="#" class="btn btn-primary contactbttn1"  type="button">contact sales</a>
+  </div>
+
+    </div>
+    <!--container-fluid ends-->
+  </div>
+
+</body>
+
+</html>
+<!-- <router-outlet></router-outlet> -->
